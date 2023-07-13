@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1, 5;
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1, 2;
+}
+
+#root {
+  height: 100dvh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: aqua;
+}
+
+.container {
+  max-width: 90rem;
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  padding-block: 2.5rem;
+}
+
+.section :nth-of-type(even) {
+  background-color: hsl(160, 100%, 90%);
+}
+
+#section-3 .container {
+  display: flex;
+  flex-direction: row;
+  /* flex-direction: column; */
+  gap: 24px;
+  flex flex-wrap: wrap;
+}
+
+#section-3 .container .card {
+  flex: 40% 1 1;
+  background-color: tomato;
+}
+
+img{max-width: 100%;}

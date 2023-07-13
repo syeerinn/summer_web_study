@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>step2</title>
+    <link rel="stylesheet" href="./style/step2.css" />
+  </head>
+  <body>
+    기본적으로: 겉에 div를 씌우지 않더라도, 혹은 아래 언급할 p태그가 없더라도
+    텍스트를 못 적는 건 아니다. 기본적인 문단 태그로, p태그가 있다.
+    <p>p태그에 작성한 텍스트입니다.</p>
+    <p>
+      기본적인 p태그의 특징은 블록요소라서 가능한 부모요소의 좌우를 가득
+      채우려고 하고, 옆에 다른 요소가 못 오게 합니다. 그리고 p태그는 위 아래
+      마진이 있습니다. 그래서 지금 p태그 간에 간격이 있는겁니다.
+    </p>
+    <h1>
+      h태그는 설정된 p태그에 적용된 폰트 크기보다 크기에 비례해 더 큰 사이즈로
+      써집니다. 개발자 도구를 보니 2em, 즉, 기본으로 설정된 글자 크기에 비해 2배
+      더 큰 폰트로 나타납니다.
+    </h1>
+    <h2>h태그는 1-6까지 h1, h2, h3와 같은 형식으로 존재합니다.</h2>
+    <h3>단지 큰 글자를 쓰기 위해 h태그를 쓰는 것은 좋지 않습니다.</h3>
+    <h4>
+      시멘틱 웹의 원칙에 따라, h1은 한번만, h2는 정말로 대체목에 원하는 부분에
+      써야합니다.
+    </h4>
+    <p>
+      img 태그는 이미지를 삽입하기 위한 태그입니다. 이 태그는 시작과 끝이
+      없습니다. 다른 태그는 여기서부터 시작해서 여기까지라는 열고 닫는 영역의
+      개념이 있지만 이미지는 그냥 넣고 땡.
+    </p>
+    <img
+      src="https://i.namu.wiki/i/aXRe4luRgBx-2x47u1k35btCnF_1ytjyuuyUmCBh7-Cb2NKKdCD-IuhToyKfI9V9xJ0wCkpysjuECx5rdiCFIc_X1dhJnrA1UYgWDGgqa38S_hHpeNbluG-Z2Lhp7H6MjdpTOkm3ASS3np-zuCYh4A.webp"
+      alt="" />
+    <p>
+      당연하지만 웹상의 올려진 이미지만 보여줄 수 있는 게 아니라 우리가 작업
+      중인 폴더 안에 있는 이미지도 연결해서 보여줄 수 있다.
+    </p>
+    <p>
+      작업중인 폴더 내부에서 모든 파일의 위치는 상대적으로 적어줘야 된다. 무엇에
+      대해 상대적이냐면 지금 작업중인 파일에 대해 상대적으로 적어줘야 한다.
+    </p>
+    <img src="./assets/olga-deeva-oZvxlkxqhI0-unsplash.jpg" alt="" />
+    <p>그밖에 자주 쓰는 태그로는 a, div, span, 그리고 ol, ul,li가 있다.</p>
+    <div>
+      div는 피그마에서 프레임과 동일한 역할을 한다. div안에는 다른 태그들이
+      담기곤 한다. 보통 그룹, 프레임 역할을 하는 것이다.
+    </div>
+    <span>
+      도 피그마의 프레임과 동일한 역할을 한다. div와의 차이점은 div는 기본적으로
+      블록 요소고, span은 인라인 요소다ㅏ. 물론 이는 기본값으로 span이 div처럼
+      사용될 수 있고, div가 span처럼 사용될 수도 있다. 그저 특별히 건드리지
+      않았을 때의 기본값이 그렇다는거다.
+    </span>
+    <span>span안에 내용이 얼마 없다면 티가 난다.</span>
+    <ol>
+      <li>ol은 ordered list의 약자고, li는 list item의 약자다.(아마?)</li>
+      <li>
+        리스트 안에 또 다른 리스트를 들여서 넣을 수 있다.
+        <ol>
+          <li>이런식으로</li>
+        </ol>
+      </li>
+      <li>아마 될거라 생각하는 사람이 많은데 된다. 뭐가 되냐면</li>
+    </ol>
+  </body>
+</html>
