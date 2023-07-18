@@ -1,0 +1,54 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  background-color: cornsilk;
+  padding-block: 3.5rem;
+  padding-inline: 1.5rem;
+  height: 900px;
+}
+
+.layout {
+  height: 100%;
+  background-color: indianred;
+  display: flex;
+  /* 컬럼은 세로, 로우는 가로, 로우가 기본값 */
+  flex-direction: row;
+  /* flex-direction: column; */
+
+  /* 정렬축을 기준으로 설명하는 옵션 */
+  /* justify-content: start; */
+  /* justify-content: end; */
+  /* justify-content: center; */
+
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
+
+  /* align-items: stretch; */
+  /* align-items: start; */
+  align-items: center;
+  /* align-items: end; */
+  gap: 1rem;
+}
+
+.card {
+  /* height: fit-content; */
+  width: 18.75rem;
+  padding: 1.5rem;
+  background-color: bisque;
+  /* 카드 하나면 잘 작동하는데, 세로 정렬 해결 못하고, 카드 옆에 카드 못두고... */
+  /* margin-inline: auto; */
+}
+
+.button {
+  padding: 0.75rem;
+  background-color: bisque;
+}

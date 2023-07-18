@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.div-box {
+  padding: 1.5rem;
+  background-color: brown;
+}
+
+.wrap {
+  /* position: relative; */
+  padding: 56px;
+  background-color: cornflowerblue;
+}
+
+.child-in-div-box {
+  padding: 1.5rem;
+  background-color: burlywood;
+}
+
+.child-in-div-box:nth-of-type(2) {
+  /* position: static; */
+  /* position: relative; */
+  /* position: absolute; */
+  /* position: sticky; */
+  /* position: fixed; */
+  top: 0;
+  left: 0;
+  max-width: 400px;
+  /* top: 50px; */
+  /* left: 50px; */
+  /* right: 50px; */
+  /* bottom: 50px; */
+  /* top: -100%; */
+  /* left: 50%; */
+  background-color: chartreuse;
+}
